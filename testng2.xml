@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="parallel suite" verbose="1" parallel="classes" thread-count="3">
+    <test name="browser tests on mac os" >
+        <parameter name="browser" value="Edge"></parameter>
+        <parameter name="os" value="Windows"></parameter>
+        <classes>
+            <class name="com.automation.project.selenium.advanced.browserstack.CreateAccountTest"></class>
+            <class name="com.automation.project.selenium.advanced.browserstack.FacebookLoginTest"></class>
+        </classes>
+    </test>
+    <test name="browser tests on firefox on windows" >
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="os" value="Windows"></parameter>
+
+        <classes>
+<!--            <class name="com.automation.project.selenium.advanced.browserstack.CreateAccountTest"></class>-->
+            <class name="com.automation.project.selenium.advanced.browserstack.FacebookLoginTest"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,16 @@
+package com.automation.project.designpatterns.decorator.examples;
+
+public class Garland extends TreeDecorator {
+
+    public Garland(ChristmasTree tree) {
+        super(tree);
+    }
+
+    public String decorate() {
+        return super.decorate() + decorateWithGarland();
+    }
+
+    private String decorateWithGarland() {
+        return " with Garland";
+    }
+}

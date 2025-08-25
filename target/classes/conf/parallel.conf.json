@@ -1,0 +1,30 @@
+{
+  "server": "hub.browserstack.com",
+  "user": "sharadadoddi_05QAsO",
+  "key": "xo2pwmPpGxqpogYw4EjR",
+  "capabilities": {
+    "build": "browserstack-build-1",
+    "name": "parallel_test",
+    "browserstack.debug": true
+  },
+  "environments": {
+    "env1": {
+      "browser": "chrome",
+      "browser_version": "latest",
+      "os": "Windows",
+      "os_version": "10"
+    },
+    "env2": {
+      "device": "iPhone XS",
+      "os_version": "15",
+      "browserName": "ios",
+      "realMobile": "true"
+    },
+    "env3": {
+      "browser": "safari",
+      "browser_version": "latest",
+      "os": "OS X",
+      "os_version": "Big Sur"
+    }
+  }
+}
